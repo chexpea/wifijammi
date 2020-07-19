@@ -285,7 +285,7 @@ def deauth(monchannel):
 def output(err, monchannel):
     os.system('clear')
     if err:
-        print err
+        print (err)
     else:
         print ('['+G+'+'+W+'] '+mon_iface+' channel: '+G+monchannel+W+'\n')
     if len(clients_APs) > 0:
