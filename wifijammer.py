@@ -159,7 +159,7 @@ def get_iface(interfaces):
     except Exception as e:
         for iface in interfaces:
             interface = iface
-            print '['+R+'-'+W+'] Minor error:',e
+            print ('['+R+'-'+W+'] Minor error:',e)
             print '    Starting monitor mode on '+G+interface+W
             return interface
 
