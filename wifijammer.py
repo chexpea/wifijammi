@@ -289,7 +289,7 @@ def output(err, monchannel):
     else:
         print ('['+G+'+'+W+'] '+mon_iface+' channel: '+G+monchannel+W+'\n')
     if len(clients_APs) > 0:
-        print '                  Deauthing                 ch   ESSID'
+        print ('                  Deauthing                 ch   ESSID')
     # Print the deauth list
     with lock:
         for ca in clients_APs:
@@ -298,7 +298,7 @@ def output(err, monchannel):
             else:
                 print ('['+T+'*'+W+'] '+O+ca[0]+W+' - '+O+ca[1]+W+' - '+ca[2])
     if len(APs) > 0:
-        print '\n      Access Points     ch   ESSID'
+        print( '\n      Access Points     ch   ESSID')
     with lock:
         for ap in APs:
             print ('['+T+'*'+W+'] '+O+ap[0]+W+' - '+ap[1].ljust(2)+' - '+T+ap[2]+W)
