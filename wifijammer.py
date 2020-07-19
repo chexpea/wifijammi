@@ -152,7 +152,7 @@ def get_iface(interfaces):
             if ' - Address:' in line: # first line in iwlist scan for a new AP
                count += 1
         scanned_aps.append((count, iface))
-        print '['+G+'+'+W+'] Networks discovered by '+G+iface+W+': '+T+str(count)+W
+        print ('['+G+'+'+W+'] Networks discovered by '+G+iface+W+': '+T+str(count)+W)
     try:
         interface = max(scanned_aps)[1]
         return interface
